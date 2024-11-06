@@ -31,9 +31,10 @@ input, button {
 .dropdown { 
     position: relative; 
     display: inline-block; 
+    width: 300px;
 }
 .dropdown-btn { 
-    padding: 10px;
+    padding: 10px 90px;
     cursor: pointer;
 }
 .dropdown-content {
@@ -48,10 +49,11 @@ input, button {
     overflow-y: auto;
 }
 .dropdown-content .dropdown-item {
-    padding: 10px;
+    padding-left: 10px ;
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .dropdown-content .dropdown-item:hover {
     background-color: #f1f1f1; 
