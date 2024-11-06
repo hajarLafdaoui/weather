@@ -1,11 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f8ff;
+h1 {
+    text-align: center;
 }
 
 .weather-container {
@@ -14,9 +8,26 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    width: fit-content;
 }
 
-input, button {
+.parent-container {
+    display: flex;
+    justify-content: center;  /* Centers items horizontally */
+    flex-direction: column;
+    align-items: center;      /* This ensures the items are centered horizontally */
+}
+
+#weekData {
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    /* Optional: you can also add styles like background and border-radius */
+}
+
+input,
+button {
     padding: 10px;
     margin: 5px;
     border: none;
@@ -27,16 +38,18 @@ input, button {
     margin-top: 20px;
 }
 
- /* Custom dropdown styling */
-.dropdown { 
-    position: relative; 
-    display: inline-block; 
+/* Custom dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
     width: 300px;
 }
-.dropdown-btn { 
+
+.dropdown-btn {
     padding: 10px 90px;
     cursor: pointer;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -48,40 +61,39 @@ input, button {
     max-height: 200px;
     overflow-y: auto;
 }
+
 .dropdown-content .dropdown-item {
-    padding-left: 10px ;
+    padding-left: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .dropdown-content .dropdown-item:hover {
-    background-color: #f1f1f1; 
+    background-color: #f1f1f1;
 }
+
 .dropdown .show {
-    display: block; 
+    display: block;
 }
 
-/*  */
-#weatherDisplay h3 {
-    margin-top: 10px;
-    font-size: 1.5em;
-    font-weight: bold;
+.forecast-entry {
+    display: flex;
+    justify-content: space-between;
 }
 
-.forecast-day {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
+.humidityWind {
+    display: flex;
+    justify-content: space-between;
 }
 
-.forecast-day h3 {
-    margin: 0;
-    font-size: 1.2em;
+.humidityWind span {
+    font-weight: 600;
+    font-size: 16px;
 }
 
-.forecast-day p {
-    margin: 5px 0;
-    font-size: 1.1em;
+.temp {
+    font-weight: 800;
+    font-size: 20px;
 }

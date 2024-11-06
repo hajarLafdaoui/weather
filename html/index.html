@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <h1>Weather App</h1>
+<div class="parent-container">
     <div class="weather-container">
-        <h1>Weather App</h1>
 
         <div class="dropdown">
             <button class="dropdown-btn" onclick="toggleDropdown()">Select a Capital</button>
@@ -21,10 +22,14 @@
         <button onclick="getWeather()"><img src="../images/search.png" width="10px" alt=""></button>
 
         <div id="weatherDisplay"></div> 
-        <div id="weekData"></div> 
         
 
     </div>
+    <div id="weekData"></div> 
+
+</div>
+   
+
 
     <script src="../js/script.js"></script>
 </body>
