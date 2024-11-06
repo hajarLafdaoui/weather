@@ -61,3 +61,27 @@ input, button {
 .dropdown .show {
     display: block; 
 }
+
+/*  */
+#weatherDisplay h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.forecast-day {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.forecast-day h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.forecast-day p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
