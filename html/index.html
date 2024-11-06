@@ -9,7 +9,15 @@
 <body>
     <div class="weather-container">
         <h1>Weather App</h1>
-        <input type="text" id="cityInput" placeholder="Enter city name">
+
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown()">Select a Capital</button>
+            <div id="select" class="dropdown-content">
+                <!-- options here -->
+            </div>
+        </div>
+
+        <!-- <input type="text" id="cityInput" placeholder="Enter city name"> -->
         <button onclick="getWeather()"><img src="../images/search.png" width="15px" alt=""></button>
 
         <div id="weatherDisplay"></div> 
